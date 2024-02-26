@@ -1,88 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <nav>
-    <ul class="sidebar">
-      <li onclick="hidesidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Products</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Forum</a></li>
-      <li><a href="#">Login</a></li>
-    </ul>
-    <ul>
-      <li><a href="#">Lyrics Go</a></li>
-      <li class="hideonmobile"><a href="#">Blog
-        <ul class="dropdown">
-          <li><a href="#">HTML</a></li>
-          <li><a href="#">CSS</a></li>
-          <li><a href="#">JAVASCRIPT</a></li>
-          <li><a href="#">PHP</a></li>
-          <li><a href="#">PHP</a></li>
-          <li><a href="#">PHP</a></li>
-
-      </ul>
-      </a></li>
-      <li class="hideonmobile"><a href="#">Products
-        <ul class="dropdown">
-          <li><a href="#">HTML</a></li>
-          <li><a href="#">CSS</a></li>
-          <li><a href="#">JAVASCRIPT</a></li>
-          <li><a href="#">PHP</a></li>
-          <li><a href="#">PHP</a></li>
-          <li><a href="#">PHP</a></li>
-
-      </ul>
-      </a></li>
-      <li class="hideonmobile"><a href="#">About
-        <ul class="dropdown">
-          <li><a href="#">HTML</a></li>
-          <li><a href="#">CSS</a></li>
-          <li><a href="#">JAVASCRIPT</a></li>
-          <li><a href="#">PHP</a></li>
-          <li><a href="#">PHP</a></li>
-          <li><a href="#">PHP</a></li>
-
-      </ul>
-      </a></li>
-      <li class="hideonmobile"><a href="#">Forum
-        <ul class="dropdown">
-          <li><a href="#">HTML</a></li>
-          <li><a href="#">CSS</a></li>
-          <li><a href="#">JAVASCRIPT</a></li>
-          <li><a href="#">PHP</a></li>
-          <li><a href="#">PHP</a></li>
-          <li><a href="#">PHP</a></li>
-
-      </ul>
-      </a></li>
-      <li class="hideonmobile"><a href="#">Login</a></li>
-      <div class="box">
-        <input type="text" placeholder="Search...">
-        <a href="#">
-          <i class="fas fa-search"></i>
-        </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+        <ul class="sidebar">
+          <li onclick="hidesidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Forum</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Lyrics Go</a></li>
+          <li class="hideonmobile"><a href="#">Blog
+            <ul class="dropdown">
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">CSS</a></li>
+              <li><a href="#">JAVASCRIPT</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">PHP</a></li>
+    
+          </ul>
+          </a></li>
+          <li class="hideonmobile"><a href="#">Products
+            <ul class="dropdown">
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">CSS</a></li>
+              <li><a href="#">JAVASCRIPT</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">PHP</a></li>
+    
+          </ul>
+          </a></li>
+          <li class="hideonmobile"><a href="#">About
+            <ul class="dropdown">
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">CSS</a></li>
+              <li><a href="#">JAVASCRIPT</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">PHP</a></li>
+    
+          </ul>
+          </a></li>
+          <li class="hideonmobile"><a href="#">Forum
+            <ul class="dropdown">
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">CSS</a></li>
+              <li><a href="#">JAVASCRIPT</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">PHP</a></li>
+    
+          </ul>
+          </a></li>
+          <li class="hideonmobile"><a href="#">Login</a></li>
+          <div class="box">
+            <input type="text" placeholder="Search...">
+            <a href="#">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+          <li onclick="showsidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+      </nav>
+    
+      <script>
+        function showsidebar() {
+          const sidebar = document.querySelector('.sidebar');
+          sidebar.style.display = 'flex';
+        }
+        function hidesidebar() {
+          const sidebar = document.querySelector('.sidebar');
+          sidebar.style.display = 'none';
+        }
+      </script>
+           <div class="panel">
+            <div class="panel-ops">
+              <ul>
+                <li><a href="#">All</a></li>
+                <li><a href="#">Trending Now</a></li>
+                <li><a href="#">Old Songs</a></li>
+                <li><a href="#">New Songs</a></li>
+                <li class="dropdown">
+                  <a href="#">Moods & Genre <i class="fa fa-chevron-down"></i></a>
+                  <div class="dropdown-content">
+                    <a href="#">Happy</a>
+                    <a href="#">Sad</a>
+                    <a href="#">Romantic</a>
+                  </div>
+                </li>
+                <li class="dropdown">
+                  <a href="#">Top Albums <i class="fa fa-chevron-down"></i></a>
+                  <div class="dropdown-content">
+                    <a href="#">Album 1</a>
+                    <a href="#">Album 2</a>
+                    <a href="#">Album 3</a>
+                  </div>
+                </li>
+                <li class="dropdown">
+                  <a href="#">Top Playlists <i class="fa fa-chevron-down"></i></a>
+                  <div class="dropdown-content">
+                    <a href="#">Playlist 1</a>
+                    <a href="#">Playlist 2</a>
+                    <a href="#">Playlist 3</a>
+                  </div>
+                </li>
+                <li><a href="#">Podcast</a></li>
+              </ul>
+            </div>
+          </div>
+    <section class="slider-container">
+      <div class="slider-images">
+        <div class="slider-img">
+          <img src="Images/1.png" alt="1" />
+          <h1>Mike</h1>
+          <div class="details">
+            <h2>Mike</h2>
+            <p>web3 Developer</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/2.png" alt="2" />
+          <h1>samite</h1>
+          <div class="details">
+            <h2>samite</h2>
+            <p>wordpress Developer</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/3.png" alt="3" />
+          <h1>hashi</h1>
+          <div class="details">
+            <h2>hashi</h2>
+            <p>java Developer</p>
+          </div>
+        </div>
+        <div class="slider-img hover">
+          <img src="Images/4.png" alt="4" />
+          <h1>kaity</h1>
+          <div class="details">
+            <h2>kaity</h2>
+            <p>web Developer</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/5.png" alt="5" />
+          <h1>lauren</h1>
+          <div class="details">
+            <h2>lauren</h2>
+            <p>php Developer</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/6.png" alt="6" />
+          <h1>ryan</h1>
+          <div class="details">
+            <h2>ryan</h2>
+            <p>seo Developer</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Images/7.png" alt="7" />
+          <h1>dakes</h1>
+          <div class="details">
+            <h2>dakes</h2>
+            <p>sql Developer</p>
+          </div>
+        </div>
+        
       </div>
-      <li onclick="showsidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-    </ul>
-  </nav>
-
-  <script>
-    function showsidebar() {
-      const sidebar = document.querySelector('.sidebar');
-      sidebar.style.display = 'flex';
-    }
-    function hidesidebar() {
-      const sidebar = document.querySelector('.sidebar');
-      sidebar.style.display = 'none';
-    }
-  </script>
-</body>
+    </section>
+    <script src="slider.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("hover");
+          $(this).addClass("hover");
+        });
+      });
+    </script>
+  </body>
 </html>
