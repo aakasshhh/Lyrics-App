@@ -1,1 +1,1 @@
-# Lyrics-App
+# Lyrics GO
