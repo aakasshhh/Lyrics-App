@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Top Pop Hits</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+        body {
+            background-image: url("https://wallpaperaccess.com/full/2742179.jpg");
+            background-size: contain;
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+            height: 65px;
+            /* background-color: black; */
+            color: white;
+        }
+
+        nav ul li{
+            padding:10px;
+            list-style-type: none;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color:rgba(0,0,0,0.9);
+        }
+
+        nav ul li a:hover{
+            color:beige;
+        }
+
+        .brand img {
+            width: 44px;
+            padding: 0 8px;
+        }
+
+        .brand{
+            display: flex;
+            align-items: center;
+            font-weight: bolder;
+            font-size: 1.3rem;
+        }
+
+        .container {
+            min-height: 72vh;
+            /* background-color: white; */
+            color: black;
+            font-family: 'Varela Round', sans-serif;
+            display: flex;
+            margin: 23px auto;
+            width: 70%;
+            border-radius: 12px;
+            padding: 34px;
+            background-image: url('bg.jpg');
+        }
+
+        .bottom {
+            position: sticky;
+            bottom: 0;
+            height: 130px;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #myProgressBar {
+            width: 80vw;
+            cursor: pointer;
+        }
+
+        .songItemContainer {
+            margin-top: 74px;
+        }
+
+        .songItem {
+            height: 50px;
+            display: flex;
+            background-color: rgb(192, 186, 186);
+            color: black;
+            margin: 12px 0;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 34px;
+            padding-left: 15px;
+        }
+
+        .songItem img {
+            width: 43px;
+            margin: 0 23px;
+            border-radius: 34px;
+        }
+
+        .timestamp {
+            margin: 0 23px;
+        }
+
+        .timestamp i {
+            cursor: pointer;
+        }
+
+        .songInfo {
+            position: absolute;
+            left: 10vw;
+            font-family: 'Varela Round', sans-serif;
+        }
+
+        .songInfo img {
+            opacity: 0;
+            transition: opacity 0.4s ease-in;
+        }
+
+        @media only screen and (max-width: 1100px) {
+            body {
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Return to Home</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h1>Your Top Pop Hits!</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <span class="songName">Late night talking</span>
+                    <span class="songlistplay"><span class="timestamp">02:52 <i id="0" class="far fa-play-circle"></i> </span></span>
+                </div>
+                <!-- Add more song items as needed -->
+                <div class="songItem">
+                    <span class="songName">As it was</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <span class="songName">About damn time</span>
+                    <span class="songlistplay"><span class="timestamp">04:37 <i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <span class="songName"> I like you</span>
+                    <span class="songlistplay"><span class="timestamp">02:34 <i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <span class="songName">Bad habit</span>
+                    <span class="songlistplay"><span class="timestamp">03:45 <i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <span class="songName">Glimpse of us</span>
+                    <span class="songlistplay"><span class="timestamp">05:40 <i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <span class="songName">Break my soul</span>
+                    <span class="songlistplay"><span class="timestamp">07:30 <i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <span class="songName">Two be loved</span>
+                    <span class="songlistplay"><span class="timestamp">02:30 <i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <span class="songName">Vegas</span>
+                    <span class="songlistplay"><span class="timestamp">02:28 <i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                <div class="songItem">
+                    <span class="songName">So good</span>
+                    <span class="songlistplay"><span class="timestamp">06:44 <i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    
+</body>
+
+</html>
