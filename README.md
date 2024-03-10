@@ -1,1 +1,1 @@
-# LyricsGo
+# Lyrics Go
