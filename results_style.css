@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+/*Front Page*/
+
+
+.banner{
+  width: 100%;
+  height: 12.5vh;
+  background-color: rgba(0, 0, 0, 0.79);
+  background-position: center;
+  background-size: center;
+
+}
+
+.navbar {
+  width: 90%;
+  padding: 30px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.bar {
+  width: 100%;
+  height: 4px;
+  background-color: white;
+}
+
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 20px;
+  
+}
+.navbar ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  padding: 15px;
+  right: auto;
+}
+li a:hover{
+  transition: 0.6s;
+}
+.navbar a:hover{
+  color: rgb(255, 63, 63);
+}
+.content{
+  width: 37%;
+  position: absolute;
+  color: white;
+  top: 6.5%;
+  left:   18%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+
+.search-container {
+  text-align: center; 
+}
+
+.search-container input[type="text"] {
+  padding: 8px; 
+  margin: 8px; 
+  width: 500px;
+  height: 30px;
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+}
+
+.search-container button {
+  padding: 8px 12px; 
+  margin: 8px; 
+  border: none; 
+  background-color: #ff0000; 
+  color: white; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+.search-container button:hover {
+  background-color: #b30000; 
+}
+
+
+
+.result.box {
+  padding: 0px;
+  margin-top: 20px;
+  margin-left: 242px;
+  background-color: #fffdfd;
+  width: 70%;
+}
+
+.full-lyrics,
+.result ul {
+  padding: 20px;
+}
+
+.result ul.song-list li {
+  list-style: none;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 15px;
+}
+
+.result ul.song-list li img {
+  max-width: 120px;
+  float: left;
+  margin-right: 15px;
+  border-radius: 4px;
+}
+
+.result ul.song-list li span {
+  background-color: #ddd;
+  border-color: #ddd;
+  color: #222;
+  padding: 6px 21px;
+  display: inline-block;
+  border-radius: 4px;
+  font-size: 12px;
+  text-decoration: none;
+  margin-top: 5px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.result ul.song-list li span:hover {
+  background-color: #bd1e26;
+  background: linear-gradient(to right, #bd1e26, #EA0909);
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+  
+}
+
+
+
