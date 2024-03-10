@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>                                                          
+    <!--<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="styling1.css">
+    <script src="https://kit.fontawesome.com/3a3e121ecf.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="images/undraw_pic_profile_re_7g2h.svg">
+
+</head>
+
+<body>
+
+<h1 class="heading">Welcome back</h1>
+
+<div class="login-button">
+New here?  
+<a href="index.html"><button class="link"> Sign Up</button></a>
+</div>
+
+<div class="signup-box">
+<img src="images/undraw_pic_profile_re_7g2h.svg" alt="User">
+<form action="/dev/index.html" name="suForm" id="supform">
+
+    <input type="text" placeholder="Email" id="email" onclick="resetBtn()">
+    <span class="error email-error">
+        <i class="bx bx-error-circle error-icon"></i>
+        <p class="error-text">Please enter a valid email</p>
+      </span>
+    <input type="password" placeholder="Password" id="pass" onclick="resetBtn()" minlength="8">
+    <span class="error email-error">
+        <i class="bx bx-error-circle error-icon"></i>
+        <p class="error-text">Please enter a valid email</p>
+      </span>
+    
+    <input type="checkbox" name="check1" id="check" onclick="resetBtn()">
+    <label for="check" class="label">I agree to the 'Terms and policies'.</label>
+
+    <input type="submit" id="submit-btn" value="Sign In" onmouseover="mouseOver()">
+
+</form>
+</div>
+<img src="images/undraw_secure_login_pdn4.svg" alt="Welcome image" style = "max-width:100%" float="left" class="image">
+<div class="container">
+
+
+
+</body>
+</html>
+
+<script>
+
+var a = 0;
+    function mouseOver(){
+        
+        
+        const email = document.forms['suForm']['email'].value;
+        const pass = document.forms['suForm']['pass'].value;
+        const tick = document.querySelector('#check');
+
+        const emailCheck = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+        if((!email.match(emailCheck) || pass == "" || tick.checked == false) && a==0){
+        buttonMoveLeft();
+        a = 1;
+        return false;
+        } 
+
+        if((!email.match(emailCheck) || pass == "" || tick.checked == false) && a==1){
+        buttonMoveRight();
+        a = 2;
+        return false;
+        } 
+
+        if((!email.match(emailCheck) || pass == "" || tick.checked == false) && a==2){
+        buttonMoveLeft();
+        a = 1;
+        return false;
+        } 
+
+        else{
+            // document.getElementById('submit-btn').click();  
+            document.getElementById('submit-btn').style.cursor = 'pointer';
+            return false;
+        };
+
+    };
+
+
+    function buttonMoveLeft(){
+        const button = document.getElementById('submit-btn');
+        button.style.transform = 'translateX(-160%)';
+
+    };
+
+
+    function buttonMoveRight(){
+        const button = document.getElementById('submit-btn');
+        button.style.transform = 'translateX(0%)';
+
+    };
+
+
+    function resetBtn(){
+        const button = document.getElementById('submit-btn');
+        button.style.transform = 'translateX(0%)';
+    };
+
+
+</script>
