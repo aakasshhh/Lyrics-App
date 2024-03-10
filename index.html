@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lyric GO</title>
+        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/9/9e/Itunes-music-app-icon.png">
+        <link rel="stylesheet" href="styles.css">
+        
+        <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    </head>
+    <body>
+      <!-- MAIN PAGE -->
+        <div class="banner">
+            <video autoplay loop muted plays-inline class="back-video">
+                <source src="music2.mp4" type="video/mp4">
+            </video>
+            <div class="navbar">
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="\login\index.html">Sign Up</a></li>
+                    <li><a href="\login\index1.html">Login</a></li>
+                    <li><a href="rating.html">Rate Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="content">
+                <h1>LYRICS GO</h1>
+                <p>"Your go-to app for finding song lyrics quickly and easily. Search by artist, song title, or even specific lyrics. Discover the words to your favorite songs in seconds!"</p>
+                <div class="search-container">
+                  <form id="form" type="search" method="get">
+                    <input type="text" id="search" placeholder="Search..." name="search">
+                    <button type="submit" onclick=scrolltobottom()>Search</button>
+                  </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- ENDS --> 
+        <section class="result box" id="result">
+        </section>
+
+        
+        <!-- TOP ARTIST STARTS -->
+
+    <!--  -->
+    <div class="header">
+        <h2>Top Artists</h2>
+    </div>
+    
+    <div class="person">
+        <div class="container">
+          <div class="container-inner">
+              <img class="circle" src="https://www.freshtalk.in/wp-content/uploads/2020/07/Screenshot_20200716-131042-01.jpeg" alt="Diljit Dosanjh">
+            </a>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <a class="name" href="https://djbaap.net/singer/diljit-dosanjh.html">Diljit Dosanjh</a>
+      </div>
+      
+  
+<!--  -->
+
+<div class="person">
+    <div class="container">
+      <div class="container-inner">
+        <img class="circle" src="https://d24jnm9llkb1ub.cloudfront.net/icpn/190296666056/190296666056-cover-zoom.jpg"/>
+      </div>
+    </div>
+
+      <div class="divider"></div>
+      <a class="name" href="https://bestoftheyear.in/singer/mankirt-aulakh/">Mankirat Aulakh</a>
+    </div>
+    
+
+    <!--  -->
+    <div class="person">
+        <div class="container">
+          <div class="container-inner">
+            <img class="circle" src="https://punjabdreamz.com/wp-content/uploads/2017/10/11390059_10153049313334422_8183966263316905529_n.jpg"/>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <a class="name" href="https://djbaap.net/singer/amrinder-gill.html">Amrinder Gill</a>
+      </div>
+
+    <!--  -->
+
+    <div class="person">
+        <div class="container">
+          <div class="container-inner">
+            <img class="circle" src="https://i.scdn.co/image/ab67616d0000b2739f3e88fbd0504a387d0d195e"/>
+          </div>
+        </div>
+    
+          <div class="divider"></div>
+          <a class="name" href="https://braina.me/music/artist/ammy-virk">Ammy Virk</a>
+        </div>
+
+        <!--  -->
+
+        <div class="person">
+            <div class="container">
+              <div class="container-inner">
+                <img class="circle" src="https://th.bing.com/th/id/OIP.YYjnylLhSvF9U5PP_-HwSAHaGr?rs=1&pid=ImgDetMain"/>
+              </div>
+            </div>
+        
+              <div class="divider"></div>
+              <a class="name" href="https://djbaap.net/singer/jassie-gill.html">Jassie Gill</a>
+            </div>
+
+            <!--  -->
+
+            <!-- <div class="person">
+                <div class="container">
+                  <div class="container-inner">
+                    <img class="circle" src="https://artist1.cdn107.com/bea/bea54093324ec98085dc4d6df640975c.jpg"/>
+                  </div>
+                </div>
+            
+                  <div class="divider"></div>
+                  <div class="name">Honey Singh</div>
+                </div>
+               -->
+
+     <!-- TOP ARTIST ENDS -->
+
+<!-- TOP CHARTS START -->
+
+<div class="content-container"></div>
+<div class="spotify-playlists">
+    <h2>Top Charts</h2>
+
+    <div class="list">
+        <div class="item">
+            <a href="pop.html">
+            <img src="/Images/1.jpeg " />
+            </a>
+            <div class="play">
+                <span class="fa fa-play" ></span>
+
+            </div>
+            <h4>Top 20 Pop Hits</h4>
+      
+</div>
+
+
+        <div class="item">
+            <a href="punjabi.html">
+            
+            <img src="/Images/2.jpeg" />
+            </a>
+            <div class="play">
+                <span class="fa fa-play"></span>
+            </div>
+            <h4>Top 50 Punjabi Hits</h4>
+            
+        </div>
+
+        <div class="item">
+            <a href="dance.html">
+            <img src="/Images/3.jpeg" />
+            </a>
+            <div class="play">
+                <span class="fa fa-play"></span>
+            </div>
+            <h4>Top 20 Dance Dramas</h4>
+            
+        </div>
+
+        <div class="item">
+            <a href="radio.html">
+            
+            <img src="/Images/4.jpeg" />
+            </a>
+            <div class="play">
+                <span class="fa fa-play"></span>
+            </div>
+            <h4>Top 20 Radio Releases</h4>
+            
+        </div>
+
+        <div class="item">
+            <a href="indie.html">
+            <img src="/Images/5.jpeg" />
+            </a>
+            <div class="play">
+                <span class="fa fa-play"></span>
+            </div>
+            <h4>Top 20 Indie Hits</h4>
+            
+        </div>
+
+        <div class="item">
+            <a href="weekly.html">
+            <img src="/Images/6.jpeg" />
+            </a>
+            <div class="play">
+                <span class="fa fa-play"></span>
+            </div>
+            <h4>Top 20 Weekly Famous</h4>
+           
+        </div>
+
+        <div class="item">
+            <a href="romance.html">
+            <img src="/Images/7.jpeg" />
+            </a>
+            <div class="play">
+                <span class="fa fa-play"></span>
+            </div>
+            <h4>Top 20 Romance Hits</h4>
+            
+        </div>
+        <div class="item">
+            <a href="socialmedia.html">
+            <img src="/Images/8.jpeg" />
+            </a>
+            <div class="play">
+                <span class="fa fa-play"></span>
+            </div>
+            <h4>Top 20 Social Media</h4>
+            
+        </div>
+    </div>
+</div>
+
+
+<!-- TOP CHARTS ENDS-->
+
+
+ 
+     <!-- JUST ARRIVED STARTS -->
+
+     <div class="content-container"></div>
+     <div class="spotify-playlists">
+         <h2>Just Arrived</h2>
+
+         <div class="list">
+             <div class="item">
+                 <a href="englishsongs.html">
+                 <img src="/Images/11.jpeg" />
+                 </a>
+                 <div class="play">
+                     <span class="fa fa-play" ></span>
+
+                 </div>
+                 <h4>Latest Indie</h4>
+           
+     </div>
+     
+
+             <div class="item">
+                 <a href="hindisongs.html">
+                 
+                 <img src="/Images/12.jpeg" />
+                 </a>
+                 <div class="play">
+                     <span class="fa fa-play"></span>
+                 </div>
+                 <h4>Indian Rock</h4>
+                 
+             </div>
+
+             <div class="item">
+                 <a href="romanticsongs.html">
+                 <img src="/Images/13.jpeg" />
+                 </a>
+                 <div class="play">
+                     <span class="fa fa-play"></span>
+                 </div>
+                 <h4>Indie Love Hits</h4>
+                 
+             </div>
+
+             <div class="item">
+                 <a href="oldsongs.html">
+                 
+                 <img src="/Images/14.jpeg" width="100" height="140" />
+                 </a>
+                 <div class="play">
+                     <span class="fa fa-play"></span>
+                 </div>
+                 <h4>Old is Gold</h4>
+                 
+             </div>
+
+             <div class="item">
+                 <a href="swifties.html">
+                 <img src="/Images/15.jpeg" width="100" height="140"/>
+                 </a>
+                 <div class="play">
+                     <span class="fa fa-play"></span>
+                 </div>
+                 <h4>Women's Special</h4>
+                 
+             </div>
+
+             <div class="item">
+                 <a href="punjabisongs.html">
+                 <img src="/Images/16.jpeg" />
+                 </a>
+                 <div class="play">
+                     <span class="fa fa-play"></span>
+                 </div>
+                 <h4>Indie Punjabi</h4>
+                
+             </div>
+
+             <div class="item">
+                 <a href="dancevibe.html">
+                 <img src="/Images/17.jpeg" />
+                 </a>
+                 <div class="play">
+                     <span class="fa fa-play"></span>
+                 </div>
+                 <h4>Asli Hip Hop</h4>
+                 
+             </div>
+             <div class="item">
+                 <a href="heartbreak.html">
+                 <img src="/Images/18.jpeg" />
+                 </a>
+                 <div class="play">
+                     <span class="fa fa-play"></span>
+                 </div>
+                 <h4>Heartbreak Hits</h4>
+
+             
+                </div>
+            </div>
+        </div>
+
+      <!-- JUST ARRIVED ENDS -->
+
+      <!-- FAQ STARTS -->
+<div class="body1">
+      <div class="section" id="faq">
+        <h2 class="secondary">Frequently Asked Questions</h2>
+    
+        <div class="faq">
+    
+            <details>
+    
+                <summary>How can I find the lyrics to a specific song?</summary>
+                <div class="content1">
+    
+                    <p>Finding the lyrics to a specific song is easy with a lyric finder website. Follow these steps:</p>
+                    <p>1. Visit our lyric finder website.</p>
+                    <p>2. Enter the name of the song or the artist in the search bar.</p>
+                    <p>3. Click the search button or press Enter.</p>
+                    <p>4. Browse through the search results to find the song you're looking for.</p>
+                    <p>5. Click on the song title to view the lyrics.</p>
+                    <p>6. You can now read and sing along with the lyrics of your favorite song!</p>
+    
+    
+                </div>
+            </details>
+    
+            <details>
+    
+                <summary>What are some popular songs with memorable lyrics?</summary>
+                <div class="content1">
+                    <p>Here are a few examples:</p>
+                    <p>"Is this the real life? Is this just fantasy?" - Bohemian Rhapsody [Queen]</p>
+                    <p>"Will you still need me, will you still feed me, When I'm sixty-four?" - When I am sixty-four [Beatles]</p>
+                    <p>"Have you ever really loved a woman?" - Bryan Adams</p>
+                    <p>Would you dance, if I asked you to dance?" - Enrique Iglesias</p>
+    
+                </div>
+            </details>
+    
+            <details>
+                <summary>Can you provide a music lyric quiz?</summary>
+                <div class="content1">
+    
+                    <p>Sure! Here are a few lines from popular songs. Can you name the songs?</p>
+                    <p>"Yeah, breakfast at Tiffany's and bottles of bubbles, Girls with tattoos who like getting in trouble."</p>
+                    <p>"Candlelight and soul forever, A dream of you and me together, Say you believe it, say you believe it."</p>
+                    <p>"Girl, you know I want your love, Your love was handmade for somebody like me."</p>
+                    <p>"Out on the wiley, windy moors, We'd roll and fall in green."</p>
+                    <p>"Maybe I'm just too demanding, Maybe I'm just like my father, too bold."</p>
+                    <p>"Lately, I've been, I've been losing sleep, Dreaming about the things that we could be."</p>
+                
+    
+                </div>
+            </details>
+    
+            <details>
+                <summary>What are the best questions asked within a song's title or lyrics?</summary>
+                <div class="content1">
+    
+                    <p>Some examples of questions asked within song titles or lyrics include:</p>
+                    <p>"Is this the real life? Is this just fantasy?" - Bohemian Rhapsody [Queen]</p>
+                    <p>"Will you still need me, will you still feed me, When I'm sixty-four?" - When I am sixty four [Beatles]</p>
+                    <p>"Have you ever really loved a woman?" - Bryan Adams</p>
+                    <p>"Would you dance, if I asked you..."</p>
+    
+                </div>
+            </details>
+    
+            <details>
+                <summary>How can I identify a song from its lyrics?</summary>
+                <div class="content1">
+    
+                    <p>There are various methods to identify a song from its lyrics, including using lyric finder websites, music recognition apps, or seeking help from online music communities and forums.
+                    </p>
+                </div>
+            </details>
+            
+            <details>
+                <summary>Can you provide examples of popular song lyrics for a name-the-song quiz?</summary>
+                <div class="content1">
+    
+                    <p>Here are some popular song lyrics for a name-the-song quiz:</p>
+                    <p>"Yeah, breakfast at Tiffany's and bottles of bubbles, Girls with tattoos who like getting in trouble"</p>
+                    <p>"Candlelight and soul forever, A dream of you and me together, Say you believe it say you believe it"</p>
+                    <p>"Girl, you know I want your love, Your love was handmade for somebody like me"</p>
+                    <p>"Out on the wiley, windy moors, We'd roll and fall in green."</p>
+                    <p>"Maybe I'm just too demanding, Maybe I'm just like my father, too bold"</p>
+                    <p>"Lately, I've been, I've been losing sleep, Dreaming about the things that we could be"</p>
+    
+                </div>
+            </details>
+    
+        </div>
+    </div>
+
+
+      <!-- FAQ ENDS -->
+
+      <!-- FOOTER STARTS -->
+
+      <footer>
+
+        <div class="foot-panel2">
+            <ul>
+                <li><h3>Trending Albums</h3></li>
+                <li><a href="#">Ram Aayege To Angana Sajaugi</a></li>
+                <li><a href="#">Dhamaka</a></li>
+                <li><a href="#">Happy Anniversary</a></li>
+                <li><a href="#">Work With Us</a></li>
+                <li><a href="#">Pushpa The Rise </a></li>
+                <li><a href="#">Master Tamil</a></li>
+                <li><a href="#">Sad Songs</a></li>
+                <li><a href="#">XXV (Deluxe Edition)</a></li>
+            </ul>
+       
+            <ul>
+                <li><h3>Podcasts</h3></li>
+                <li><a href="#">Choti Si Kahani</a></li>
+                <li><a href="#">Dua Lipa: At Your Service</a></li>
+                <li><a href="#">The Robin Sharma Mastery Sessions</a></li>
+                <li><a href="#">Life Ki Rann Neeti</a></li>
+                <li><a href="#">Story Podcasts</a></li>
+                <li><a href="#">Raavn</a></li>
+                <li><a href="#">Motivational Podcasts</a></li>
+                <li><a href="#">Sunday Suspense</a></li>
+                <li><a href="#">Riya's Retro</a></li>
+                <li><a href="#">MD Motivation</a></li>
+                <li><a href="#">RJ Kartik Motivation</a></li>
+            </ul>
+        
+            <ul>
+                <li><h3>Genres</h3></li>
+                <li><a href="#">Bollywood Songs</a></li>
+                <li><a href="#">Devotional Songs</a></li>
+                <li><a href="#">Ghazals</a></li>
+                <li><a href="#">Patriotic Songs</a></li>
+                <li><a href="#">Kids Songs</a></li>
+                <li><a href="#">Rock Songs</a></li>
+                <li><a href="#">Disco Songs</a></li>
+                <li><a href="#">Sufi Songs</a></li>
+                <li><a href="#">Love Songs</a></li>
+  
+            </ul>
+            <ul>
+                <li><h3>New Releases</h3></li>
+                <li><a href="#">New English Songs</a></li>
+                <li><a href="#">New Hindi Songs</a></li>
+                <li><a href="#">New Punjabi Songs</a></li>
+                <li><a href="#">New Tamil Songs</a></li>
+                <li><a href="#">New Gujarati Songs</a></li>
+                <li><a href="#">New Assamese Songs</a></li>
+                <li><a href="#">New Odia Songs</a></li>
+                <li><a href="#">New Bengali Songs</a></li>
+                <li><a href="#">New Kannada Songs</a></li>
+          
+            </ul>
+
+            
+        </div>
+
+        <div class="foot-panel3">
+                <ul>
+                    <li><h3>About LyricGo</h3></li>
+                    <li><a href="#">Who We Are</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Work With Us</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Report Fraud</a></li>
+                    <li><a href="#">Press Kit</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+
+            <ul>
+                <li><h3>Company</h3></li>
+                <li><a href="#">Culture</a></li>
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">Beta Testers</a></li>
+                <li><a href="#">Advertise</a></li>
+                <li><a href="#">Terms & Privacy</a></li>
+                <li><a href="#">Help & Support</a></li>
+                <li><a href="#">Grievances</a></li>
+                
+            </ul>
+
+            <ul>
+                <li><h3>More</h3></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Accessibility</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Affiliates</a></li>
+                <li><a href="#">Modern Slavery Statement</a></li>
+                <li><a href="#">Manage Cookie Preferences</a></li>
+
+            </ul>
+
+            <ul>
+                <li><a href="https://www.apple.com/in/store"><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d3njjcbhbojbot.cloudfront.net/web/images/icons/download_on_the_app_store_badge_en.svg?auto=format%2Ccompress&dpr=1&w=152&h=45&q=40" alt="apple"></li></a>
+
+                <li style="padding-top: 80px;"><a href="https://play.google.com/store/games?device=windows"><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d3njjcbhbojbot.cloudfront.net/web/images/icons/en_generic_rgb_wo_45.png?auto=format%2Ccompress&dpr=1&w=152&h=45&q=40" alt="google"></li></a>
+
+            </ul>
+
+
+        </div>
+<hr>
+
+        <div class="foot-panel4">
+            <div class="copyright">
+                © Entertainment Network India Ltd. 2024, All rights reserved.
+        </div>
+
+        <div class="follow-us">
+            <span>Follow Us: </span>
+
+            <div class="icons">
+                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook" style="color: #4267B2;"></i></a>
+  
+  <a href="https://www.twitter.com"><i class="fa-brands fa-twitter" style="color: #1DA1F2;"></i></a>
+
+  <a href="https://www.youtube.com"><i class="fa-brands fa-youtube" style="color: #FF0000;"></i></a>
+
+  <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin" style="color: #0A66C2;"></i></a>
+  
+  <a href="https://www.instagram.com"><i class="fa-brands fa-instagram" style="color: #E4405F;"></i></a>
+
+            </div>
+          </div>
+
+    </div>
+    </footer> 
+</div>
+
+      <!-- FOOTER ENDS -->
+
+
+
+<script src="main.js"></script>
+
+
+
+    </body>
+</html>
