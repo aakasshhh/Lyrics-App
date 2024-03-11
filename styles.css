@@ -27,14 +27,7 @@
   justify-content: space-between;
 }
 
-.hamburger {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 20px;
-  cursor: pointer;
-}
+
 
 .bar {
   width: 100%;
